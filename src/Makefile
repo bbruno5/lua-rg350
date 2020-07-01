@@ -15,13 +15,13 @@ CFLAGS= -Wall -mips32 -O3 -Wextra -fthread-jumps -fexpensive-optimizations -ffas
 LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
 LIBS= -lm $(SYSLIBS) $(MYLIBS)
 
-AR= ${TOOLCHAINDIR}/usr/mipsel-gcw0-linux-uclibc/bin/ar --target=elf32-tradlittlemips rcu
+AR= ${TOOLCHAINDIR}/usr/mipsel-gcw0-linux-uclibc/bin/ar rcu
 RANLIB= ${TOOLCHAINDIR}/usr/mipsel-gcw0-linux-uclibc/bin/ranlib
 RM= rm -f
 UNAME= uname
 
 SYSCFLAGS=
-SYSLDFLAGS= ${TOOLCHAINDIR}/usr/lib
+SYSLDFLAGS=
 SYSLIBS=
 
 MYCFLAGS=
