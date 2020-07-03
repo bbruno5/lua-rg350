@@ -1,0 +1,25 @@
+# Package information for Lua to be used by pkg-config.
+majver=5
+minver=4
+relver=0
+version=${majver}.${minver}.${relver}
+abiver=5.4
+
+prefix=/opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr
+multilib=lib
+exec_prefix=${prefix}
+libdir=${exec_prefix}/${multilib}
+libname=lua
+includedir=${prefix}/include/lua
+
+INSTALL_LMOD=${prefix}/share/lua/${abiver}
+INSTALL_CMOD=${prefix}/${multilib}/lua/${abiver}
+
+Name: Lua
+Description: This is Lua 5.4.0, released on 18 Jun 2020.
+URL: https://www.lua.org/
+Version: ${version}
+Requires:
+Libs: -L${libdir} -l${libname}
+Libs.private: -Wl,-E -lm -ldl
+Cflags: -I${includedir}
