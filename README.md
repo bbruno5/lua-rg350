@@ -6,4 +6,4 @@ further information about Lua, see doc/readme.html.
 
 # For RG-350:
 
-After `make`, put `lua.pc` into /opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/lib/pkgconfig
+After `make`, put `lua.pc` from directory `res` into /opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/lib/pkgconfig
