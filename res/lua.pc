@@ -23,3 +23,4 @@ Requires:
 Libs: -L${libdir} -l${libname}
 Libs.private: -Wl,-E -lm -ldl
 Cflags: -I${includedir}
+ 
