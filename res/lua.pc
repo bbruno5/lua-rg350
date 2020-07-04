@@ -5,7 +5,7 @@ relver=0
 version=${majver}.${minver}.${relver}
 abiver=5.4
 
-prefix=/opt/gcw0-toolchain/usr/mipsel-gcw0-linux-uclibc/sysroot/usr
+prefix=/usr
 multilib=lib
 exec_prefix=${prefix}
 libdir=${exec_prefix}/${multilib}
