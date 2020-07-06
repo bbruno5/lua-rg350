@@ -11,7 +11,7 @@ BINPATH= ${TOOLCHAINDIR}/usr/bin
 INCLUDES= -I. -I${TOOLCHAINDIR}/usr/include -I${TOOLCHAINDIR}/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/include -I${TOOLCHAINDIR}/usr/mipsel-gcw0-linux-uclibc/sysroot/usr/include/SDL
 
 CC= ${BINPATH}/mipsel-linux-gcc -std=gnu99
-CFLAGS= -Wall -mips32 -O3 -Wextra -fthread-jumps -fexpensive-optimizations -ffast-math -DLUA_COMPAT_5_3 ${INCLUDES} $(SYSCFLAGS) $(MYCFLAGS)
+CFLAGS= -Wall -mips32 -O3 -Wextra -fPIC -fthread-jumps -fexpensive-optimizations -ffast-math -DLUA_COMPAT_5_3 ${INCLUDES} $(SYSCFLAGS) $(MYCFLAGS)
 LDFLAGS= $(SYSLDFLAGS) $(MYLDFLAGS)
 LIBS= -lm $(SYSLIBS) $(MYLIBS)
 
