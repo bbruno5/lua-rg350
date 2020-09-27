@@ -1,3 +1,5 @@
+  - Current status: waiting for a new kernel with posix_spawn support
+
 
 This is Lua 5.4.0, released on 18 Jun 2020.
 
